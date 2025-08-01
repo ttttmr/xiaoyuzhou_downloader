@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 
 export default function Home() {
   const [url, setUrl] = useState("");
@@ -45,7 +46,68 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "小宇宙播客下载器",
+              description: "免费下载小宇宙播客，自动解析并生成精美文件名。支持所有小宇宙播客节目，一键下载离线收听。",
+              url: "https://xyz.xlab.app",
+              applicationCategory: "UtilitiesApplication",
+              operatingSystem: "Web",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "CNY"
+              },
+              creator: {
+                "@type": "Organization",
+                name: "小宇宙播客下载器"
+              },
+              featureList: [
+                "播客下载",
+                "音频解析",
+                "文件名美化",
+                "一键下载"
+              ],
+              mainEntity: {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "如何使用小宇宙播客下载器？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "只需复制小宇宙播客链接，粘贴到输入框中，点击下载按钮即可自动解析并下载音频文件。"
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    name: "下载的音频文件是什么格式？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "下载的音频文件通常是M4A或MP3格式，取决于原始播客文件的编码格式。"
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    name: "下载完全免费吗？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "是的，小宇宙播客下载器完全免费使用，无需注册或登录。"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
+      </Head>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
       {/* Header */}
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
@@ -234,5 +296,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
