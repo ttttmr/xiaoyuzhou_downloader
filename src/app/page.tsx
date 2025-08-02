@@ -263,11 +263,11 @@ export default function Home() {
                 <div>
                   <h3 className="font-semibold text-blue-800 mb-1">快捷下载</h3>
                   <p className="text-sm text-blue-700 mb-2">
-                    地址栏域名替换为：
+                    地址栏域名 com 替换为 xlab.app 即可快速下载
                   </p>
                   <div className="bg-blue-100 rounded-lg p-3 font-mono text-sm">
                     <div className="flex items-center justify-between">
-                      <span className="text-blue-800">www.xiaoyuzhoufm.com</span>
+                      <span className="text-blue-800">www.xiaoyuzhoufm.<span className="font-semibold">com</span></span>
                       <svg
                         className="w-4 h-4 text-blue-600 mx-2"
                         fill="none"
@@ -281,14 +281,9 @@ export default function Home() {
                           d="M13 7l5 5m0 0l-5 5m5-5H6"
                         />
                       </svg>
-                      <span className="text-blue-800 font-semibold">
-                        xyz.xlab.app
-                      </span>
+                      <span className="text-blue-800">www.xiaoyuzhoufm.<span className="font-semibold">xlab.app</span></span>
                     </div>
                   </div>
-                  <p className="text-xs text-blue-600 mt-2">
-                    替换后例如：https://xyz.xlab.app/episode/6889da698e06fe8de77116a9
-                  </p>
                 </div>
               </div>
             </div>

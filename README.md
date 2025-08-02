@@ -11,20 +11,22 @@
 
 ## 在线使用
 
-访问 [xyz.xlab.app](https://xyz.xlab.app) 开始下载播客。
+访问 [www.xiaoyuzhoufm.xlab.app](https://www.xiaoyuzhoufm.xlab.app) 开始下载播客。
 
 ### 使用方法
 
-1. 访问 [xyz.xlab.app](https://xyz.xlab.app)
+1. 访问 [www.xiaoyuzhoufm.xlab.app](https://www.xiaoyuzhoufm.xlab.app)
 2. 粘贴小宇宙播客链接（支持 `xiaoyuzhoufm.com/episode/` 格式）
 3. 点击"一键下载"按钮
 4. 等待音频文件下载完成
 
 ### 快捷技巧
 
-将浏览器地址栏中的 `www.xiaoyuzhoufm.com` 替换为 `xyz.xlab.app` 即可快速访问：
+将浏览器地址栏中的 `www.xiaoyuzhoufm.com` 替换为 `www.xiaoyuzhoufm.xlab.app` 即可快速访问：
+
+只需将 **com** 替换为 **xlab.app** 即可快速下载
 
 ```
-原始：https://www.xiaoyuzhoufm.com/episode/6889da698e06fe8de77116a9
-快捷：https://xyz.xlab.app/episode/6889da698e06fe8de77116a9
+原始地址：https://www.xiaoyuzhoufm.com/episode/6889da698e06fe8de77116a9
+下载地址：https://www.xiaoyuzhoufm.xlab.app/episode/6889da698e06fe8de77116a9
 ```
