@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import * as cheerio from 'cheerio'
 
 export async function GET(
   request: NextRequest,
@@ -24,12 +23,11 @@ export async function GET(
     }
 
     const html = await response.text()
-    const $ = cheerio.load(html)
-
-    // Directly extract the script with name="schema:podcast-show"
-    const podcastShowScript = $('script[name="schema:podcast-show"]')
-
-    if (!podcastShowScript.length) {
+    
+    // Optimized: Use Regex instead of Cheerio to save CPU time
+    const match = html.match(/<script[^>]*name="schema:podcast-show"[^>]*>([\s\S]*?)<\/script>/i)
+    
+    if (!match || !match[1]) {
       return NextResponse.json(
         { error: 'Could not find podcast schema data' },
         { status: 404 }
@@ -37,14 +35,7 @@ export async function GET(
     }
 
     try {
-      const scriptContent = podcastShowScript.html()
-      if (!scriptContent) {
-        return NextResponse.json(
-          { error: 'Empty podcast schema data' },
-          { status: 404 }
-        )
-      }
-
+      const scriptContent = match[1]
       const jsonData = JSON.parse(scriptContent)
 
       // Verify it's the correct type
