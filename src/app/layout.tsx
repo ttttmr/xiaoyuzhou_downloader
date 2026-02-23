@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://xyz.xlab.app'),
   title: "小宇宙播客下载器 - 一键下载小宇宙播客音频",
   description: "免费下载小宇宙播客，自动解析并生成精美文件名。支持所有小宇宙播客节目，一键下载离线收听。",
   keywords: "小宇宙播客下载, podcast downloader, 播客下载器, 小宇宙, 音频下载, 离线收听",
