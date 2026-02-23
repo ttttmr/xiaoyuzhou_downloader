@@ -1,6 +1,6 @@
 main = ".open-next/worker.js"
 name = "xiaoyuzhou-downloader"
-compatibility_date = "2025-03-25"
+compatibility_date = "2026-01-20"
 compatibility_flags = ["nodejs_compat"]
 [assets]
 directory = ".open-next/assets"
