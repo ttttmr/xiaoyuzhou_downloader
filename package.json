@@ -19,7 +19,7 @@
     "next": "^16.1.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "@opennextjs/cloudflare": "^1.16.4"
+    "@opennextjs/cloudflare": "^1.17.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
