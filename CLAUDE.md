@@ -1,4 +1,8 @@
-# CLAUDE.md
+# CLAUDE.md (DEPRECATED)
+
+> [!CAUTION]
+> This project is no longer maintained due to Cloudflare Worker execution limits.
+> Users are redirected to: https://greasyfork.org/zh-CN/scripts/569032-%E5%B0%8F%E5%AE%87%E5%AE%99%E6%92%AD%E5%AE%A2%E4%B8%8B%E8%BD%BD%E5%99%A8
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
